@@ -26,6 +26,8 @@ npm run build
 npm run lint
 ```
 
+## Origin of test [questions](https://docs.google.com/document/d/1cYDhmM4o0st7mGylsOIlxyVC3gZyNtAb/edit)
+
 ### Test questions for knowledge vanilla JS
 
 In folder src you can find answers to test questions.
