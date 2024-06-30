@@ -69,5 +69,5 @@ getCharsList.js
 
 ### Test for knoledge htmll/css on vue.js 2
 
-You can see final result on [vercel] or you can deploy project on your own local setup.
+You can see final result on [vercel](https://diginetica-vue.vercel.app/) or you can deploy project on your own local setup.
 
