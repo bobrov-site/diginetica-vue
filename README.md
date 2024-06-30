@@ -67,4 +67,7 @@ getCodesList.js
 Написать функцию для получения всех характеристики товара в консоли браузера в виде объекта в формате attributeName: value на странице https://nir-vanna.ru/product/smesitel-bravat-art-f175109c-dlya-rakoviny/
 getCharsList.js
 
+### Test for knoledge htmll/css on vue.js 2
+
+You can see final result on [vercel] or you can deploy project on your own local setup.
 
