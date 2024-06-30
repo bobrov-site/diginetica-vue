@@ -1,0 +1,249 @@
+aside {
+    max-width: 280px;
+    @media screen and (max-width: 1154px) {
+        max-width: 239px;
+    }
+    @media screen and (max-width: 1139px) {
+        max-width: 280px;
+        width: 100%;
+    }
+    @media screen and (max-width: 781px) {
+        display: none;
+    }
+    .category-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 16px 0px 8px;
+
+        &-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include ptRegular();
+            font-size: 14px;
+            line-height: 114%;
+            padding: 7px 8px 7px 8px;
+
+            span {
+                position: absolute;
+                right: 8px;
+                @include ptRegular();
+                font-size: 12px;
+                line-height: 117%;
+                text-align: right;
+                color: $secondary;
+            }
+        }
+
+        a {
+            color: $primary;
+            width: 100%;
+        }
+
+        &-item:hover {
+            transition: 0.2s ease-in;
+            background-color: $backgroundHover;
+        }
+    }
+
+    .sub-category-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 8px;
+
+        &-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include ptRegular();
+            font-size: 14px;
+            line-height: 114%;
+            color: $primary;
+            padding: 7px 8px 7px 8px;
+
+            a {
+                width: 100%;
+                color: $primary;
+            }
+
+            span {
+                position: absolute;
+                @include ptRegular();
+                font-size: 12px;
+                line-height: 117%;
+                text-align: right;
+                color: $secondary;
+                right: 8px;
+            }
+        }
+
+        &-item:hover {
+            transition: 0.2s ease-in;
+            background-color: $backgroundHover;
+        }
+
+        .selected {
+            background: $backgroundHover;
+        }
+    }
+
+    .filter {
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+
+            .filter-title {
+                margin-bottom: 0;
+            }
+        }
+
+        &-reset {
+            background: none;
+            @include ptRegular();
+            font-size: 12px;
+            line-height: 100%;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            text-align: right;
+            color: $secondary;
+            border: none;
+            cursor: pointer;
+        }
+
+        margin-top: 28px;
+
+        &-title {
+            text-align: center;
+            margin-bottom: 16px;
+            @include ptBold();
+            font-size: 16px;
+            line-height: 125%;
+            color: var(--font-primary);
+        }
+
+        &-search {
+            position: relative;
+
+            input {
+                width: 100%;
+                border: 1px solid $borderInput;
+                border-radius: 4px;
+                padding: 10px 8px;
+                height: 36px;
+                @include ptRegular();
+                font-size: 14px;
+                line-height: 114%;
+                color: $primary;
+                padding-left: 26px;
+                outline-color: $backgroundPills;
+            }
+
+            input::placeholder {
+                @include ptRegular();
+                font-size: 14px;
+                line-height: 114%;
+                color: $secondary;
+            }
+
+            img {
+                position: absolute;
+                top: 10px;
+                left: 8px;
+            }
+
+        }
+
+        &-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+
+            div {
+                position: relative;
+
+                input {
+                    max-width: 119px;
+                    border: 1px solid $borderInput;
+                    border-radius: 4px;
+                    padding: 10px 8px;
+                    height: 36px;
+                    @include ptRegular();
+                    font-size: 14px;
+                    line-height: 114%;
+                    color: $primary;
+                    padding-left: 26px;
+                    outline-color: $backgroundPills;
+                    width: 100%;
+                }
+
+                span {
+                    position: absolute;
+                    @include ptRegular();
+                    font-size: 12px;
+                    line-height: 117%;
+                    text-align: right;
+                    color: $secondary;
+                    top: 12px;
+                    left: 8px;
+                }
+            }
+        }
+
+        &-blank {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        &-attrs {
+            margin-top: 16px;
+            height: 180px;
+            overflow-y: auto;
+
+            &-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include ptRegular();
+                font-size: 14px;
+                line-height: 114%;
+                color: $primary;
+                padding: 7px 8px 7px 8px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        margin-left: 0;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-right: 12px;
+                        cursor: pointer;
+                        border-radius: 3px;
+                        width: 19px;
+                        height: 19px;
+                        border: 1px solid $borderInput;
+                    }
+
+
+                }
+
+                span {
+                    position: absolute;
+                    @include ptRegular();
+                    font-size: 12px;
+                    line-height: 117%;
+                    text-align: right;
+                    color: $secondary;
+                    right: 8px;
+                }
+            }
+        }
+    }
+}
